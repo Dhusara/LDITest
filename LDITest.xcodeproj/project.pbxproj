@@ -56,15 +56,31 @@
 		2EA11969297C412B0063AF49 /* LDITest */ = {
 			isa = PBXGroup;
 			children = (
-				2EA1196A297C412B0063AF49 /* AppDelegate.swift */,
-				2EA1196C297C412C0063AF49 /* SceneDelegate.swift */,
+				2EA1197E297C41390063AF49 /* Delegates */,
 				2EA1196E297C412C0063AF49 /* ViewController.swift */,
-				2EA11970297C412C0063AF49 /* Main.storyboard */,
+				2EA1197F297C41610063AF49 /* MainStoryboards */,
 				2EA11973297C412E0063AF49 /* Assets.xcassets */,
-				2EA11975297C412E0063AF49 /* LaunchScreen.storyboard */,
 				2EA11978297C412E0063AF49 /* Info.plist */,
 			);
 			path = LDITest;
+			sourceTree = "<group>";
+		};
+		2EA1197E297C41390063AF49 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1196A297C412B0063AF49 /* AppDelegate.swift */,
+				2EA1196C297C412C0063AF49 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		2EA1197F297C41610063AF49 /* MainStoryboards */ = {
+			isa = PBXGroup;
+			children = (
+				2EA11970297C412C0063AF49 /* Main.storyboard */,
+				2EA11975297C412E0063AF49 /* LaunchScreen.storyboard */,
+			);
+			path = MainStoryboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
