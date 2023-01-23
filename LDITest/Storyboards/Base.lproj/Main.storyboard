@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LaunchViewController" customModule="LDITest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="hjS-JL-zWf">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_game_logo" translatesAutoresizingMaskIntoConstraints="NO" id="PrL-q7-qsI">
+                                        <rect key="frame" x="125.66666666666669" y="326.66666666666669" width="142" height="119"/>
+                                    </imageView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uGT-lE-9kv">
+                                        <rect key="frame" x="40" y="485.66666666666669" width="313" height="2.6666666666666856"/>
+                                        <color key="progressTintColor" red="0.3921568627" green="0.86274509799999999" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </progressView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1176470588" green="0.1137254902" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uGT-lE-9kv" firstAttribute="top" secondItem="PrL-q7-qsI" secondAttribute="bottom" constant="40" id="8aN-qL-MM3"/>
+                                    <constraint firstItem="uGT-lE-9kv" firstAttribute="leading" secondItem="hjS-JL-zWf" secondAttribute="leading" constant="40" id="EcG-hW-zyr"/>
+                                    <constraint firstAttribute="trailing" secondItem="uGT-lE-9kv" secondAttribute="trailing" constant="40" id="UZG-J8-nU2"/>
+                                    <constraint firstItem="PrL-q7-qsI" firstAttribute="centerY" secondItem="hjS-JL-zWf" secondAttribute="centerY" constant="-40" id="iad-LZ-5Ug"/>
+                                    <constraint firstItem="PrL-q7-qsI" firstAttribute="centerX" secondItem="hjS-JL-zWf" secondAttribute="centerX" id="zMJ-eu-Lr5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1176470518" green="0.11372549830000001" blue="0.13725490870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgView" destination="hjS-JL-zWf" id="Nl2-Ie-T7S"/>
+                        <outlet property="logoImageView" destination="PrL-q7-qsI" id="UZy-ZQ-mny"/>
+                        <outlet property="progressLoader" destination="uGT-lE-9kv" id="n2K-ij-cES"/>
+                        <segue destination="kvv-qi-cO5" kind="presentation" identifier="goToGame" modalPresentationStyle="fullScreen" id="QRA-y8-Gxu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="4"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="yCT-v9-Spl">
+            <objects>
+                <viewController id="kvv-qi-cO5" customClass="MainViewController" customModule="LDITest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i2P-dV-ntb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.082352943720000002" green="0.078431375319999996" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcO-Za-7zD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_game_logo" width="142" height="119"/>
+    </resources>
+</document>
