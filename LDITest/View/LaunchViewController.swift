@@ -27,9 +27,14 @@ final class LaunchViewController: UIViewController {
         }
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     fileprivate func setupLoader() {
-        progressLoader.progress = 0.0
-        self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(loading), userInfo: nil, repeats: true)
+        self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.2, target: self,
+                                                     selector: #selector(loading),
+                                                     userInfo: nil, repeats: true)
         progressLoader.progressTintColor = UIColor.init(red: 100, green: 220, blue: 207)
         progressLoader.progressViewStyle = .bar
     }

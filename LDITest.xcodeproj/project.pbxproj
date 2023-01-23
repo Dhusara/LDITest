@@ -15,6 +15,7 @@
 		2EA11982297DCFE40063AF49 /* ScoresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA11981297DCFE40063AF49 /* ScoresModel.swift */; };
 		2EA11988297DE9F10063AF49 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA11987297DE9F10063AF49 /* LaunchViewController.swift */; };
 		2EA1198B297DFF080063AF49 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1198A297DFF080063AF49 /* UIColor + Extension.swift */; };
+		2EFF5839297EEE9500D06280 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF5838297EEE9500D06280 /* UIView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2EA11981297DCFE40063AF49 /* ScoresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresModel.swift; sourceTree = "<group>"; };
 		2EA11987297DE9F10063AF49 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		2EA1198A297DFF080063AF49 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		2EFF5838297EEE9500D06280 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,8 @@
 		2EA11986297DE9E20063AF49 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2EA1196E297C412C0063AF49 /* MainViewController.swift */,
 				2EA11987297DE9F10063AF49 /* LaunchViewController.swift */,
+				2EA1196E297C412C0063AF49 /* MainViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				2EA1198A297DFF080063AF49 /* UIColor + Extension.swift */,
+				2EFF5838297EEE9500D06280 /* UIView + Extension.swift */,
 			);
 			path = HelpingFiles;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				2EA11988297DE9F10063AF49 /* LaunchViewController.swift in Sources */,
 				2EA1196F297C412C0063AF49 /* MainViewController.swift in Sources */,
 				2EA1198B297DFF080063AF49 /* UIColor + Extension.swift in Sources */,
+				2EFF5839297EEE9500D06280 /* UIView + Extension.swift in Sources */,
 				2EA1196B297C412B0063AF49 /* AppDelegate.swift in Sources */,
 				2EA1196D297C412C0063AF49 /* SceneDelegate.swift in Sources */,
 			);
