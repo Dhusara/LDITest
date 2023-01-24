@@ -27,30 +27,45 @@ final class MainViewController: UIViewController {
     @IBOutlet private weak var leftGameImageView: UIImageView!
     @IBOutlet private weak var rightGameView: UIView!
     
+    fileprivate var gameModel = [
+        SlotsModel(name: "slot1", backgroungImage: "ic_back_1",
+                slotImageArray: ["SP1_0", "SP1_1", "SP1_2", "SP1_3", "SP1_4", "SP1_5", "SP1_6", "SP1_7", "SP1_8"], logoImage: "SP1_8", countLines: 5),
+        SlotsModel(name: "slot2", backgroungImage: "ic_back_2",
+                  slotImageArray: ["SP2_0", "SP2_1", "SP2_2", "SP2_3", "SP2_4", "SP2_5", "SP2_6", "SP2_7", "SP2_8"], logoImage: "SP2_8", countLines: 5),
+        SlotsModel(name: "slot3", backgroungImage: "ic_back_3",
+                  slotImageArray: ["SP3_0", "SP3_1", "SP3_2", "SP3_3", "SP3_4", "SP3_5", "SP3_6", "SP3_7", "SP3_8"], logoImage: "SP3_8", countLines: 5)
+    ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
     fileprivate func setupUI() {
-        scoresView.roundCorners(corners: .allCorners, radius: 3)
+        scoresAmountView.roundCorners(corners: .allCorners, radius: 4)
         gamesSectionView.roundCorners(corners: [.topLeft, .topRight], radius: 40)
         leftSliderImageView.isHidden = true
         leftGameImageView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 9)
+        scoresAmountLabel.text = ScoresModel.shared.getScore().description
     }
-    
     
     @IBAction func changeScreenAction(_ sender: UIButton) {
         switch sender.tag {
         case 0: setupButtons(isLeft: true)
         case 1: setupButtons(isLeft: false)
-        default: setupButtons(isLeft: true)
+        default: setupButtons(isLeft: false)
         }
+    }
+    
+    @IBAction func toGameAction(_ sender: UIButton) {
+        switch sender.tag {
+        case 0: currentGameModel = gameModel[0]
+        case 1: currentGameModel = gameModel[1]
+        case 2: currentGameModel = gameModel[2]
+        default: break
+        }
+        self.performSegue(withIdentifier: "startGame", sender: nil)
     }
     
     fileprivate func setupButtons(isLeft: Bool) {
@@ -73,3 +88,25 @@ final class MainViewController: UIViewController {
     }
 }
 
+
+// MARK: - Overrides extension
+
+extension MainViewController {
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return .portrait
+    }
+    
+}

@@ -15,7 +15,11 @@
 		2EA11982297DCFE40063AF49 /* ScoresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA11981297DCFE40063AF49 /* ScoresModel.swift */; };
 		2EA11988297DE9F10063AF49 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA11987297DE9F10063AF49 /* LaunchViewController.swift */; };
 		2EA1198B297DFF080063AF49 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1198A297DFF080063AF49 /* UIColor + Extension.swift */; };
+		2EB15557297F68A100ADFF53 /* Gradient + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB15556297F68A100ADFF53 /* Gradient + Extension.swift */; };
+		2EB15559297F697000ADFF53 /* SlotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB15558297F697000ADFF53 /* SlotsModel.swift */; };
+		2EB3DB9F297F64D20002315F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB3DB9E297F64D20002315F /* GameViewController.swift */; };
 		2EFF5839297EEE9500D06280 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF5838297EEE9500D06280 /* UIView + Extension.swift */; };
+		2EFF583C297F62F600D06280 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF583B297F62F600D06280 /* GMStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +33,11 @@
 		2EA11981297DCFE40063AF49 /* ScoresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresModel.swift; sourceTree = "<group>"; };
 		2EA11987297DE9F10063AF49 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		2EA1198A297DFF080063AF49 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		2EB15556297F68A100ADFF53 /* Gradient + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient + Extension.swift"; sourceTree = "<group>"; };
+		2EB15558297F697000ADFF53 /* SlotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsModel.swift; sourceTree = "<group>"; };
+		2EB3DB9E297F64D20002315F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2EFF5838297EEE9500D06280 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		2EFF583B297F62F600D06280 /* GMStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMStepper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				2EA11981297DCFE40063AF49 /* ScoresModel.swift */,
+				2EB15558297F697000ADFF53 /* SlotsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +112,7 @@
 			children = (
 				2EA11987297DE9F10063AF49 /* LaunchViewController.swift */,
 				2EA1196E297C412C0063AF49 /* MainViewController.swift */,
+				2EB3DB9E297F64D20002315F /* GameViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +122,8 @@
 			children = (
 				2EA1198A297DFF080063AF49 /* UIColor + Extension.swift */,
 				2EFF5838297EEE9500D06280 /* UIView + Extension.swift */,
+				2EB15556297F68A100ADFF53 /* Gradient + Extension.swift */,
+				2EFF583B297F62F600D06280 /* GMStepper.swift */,
 			);
 			path = HelpingFiles;
 			sourceTree = "<group>";
@@ -187,8 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EA11982297DCFE40063AF49 /* ScoresModel.swift in Sources */,
+				2EFF583C297F62F600D06280 /* GMStepper.swift in Sources */,
 				2EA11988297DE9F10063AF49 /* LaunchViewController.swift in Sources */,
+				2EB15559297F697000ADFF53 /* SlotsModel.swift in Sources */,
+				2EB15557297F68A100ADFF53 /* Gradient + Extension.swift in Sources */,
 				2EA1196F297C412C0063AF49 /* MainViewController.swift in Sources */,
+				2EB3DB9F297F64D20002315F /* GameViewController.swift in Sources */,
 				2EA1198B297DFF080063AF49 /* UIColor + Extension.swift in Sources */,
 				2EFF5839297EEE9500D06280 /* UIView + Extension.swift in Sources */,
 				2EA1196B297C412B0063AF49 /* AppDelegate.swift in Sources */,

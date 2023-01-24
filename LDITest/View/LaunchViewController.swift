@@ -27,10 +27,6 @@ final class LaunchViewController: UIViewController {
         }
     }
     
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
     fileprivate func setupLoader() {
         self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.2, target: self,
                                                      selector: #selector(loading),
@@ -52,3 +48,25 @@ final class LaunchViewController: UIViewController {
 
 }
 
+
+// MARK: - Overrides extension
+
+extension LaunchViewController {
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return .portrait
+    }
+    
+}
